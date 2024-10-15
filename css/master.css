@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: 0.3s;
+}
+
+body {
+    font-family: "Open Sans";
+    background-color: #eee;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oswald";
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+}
+
+button,
+input[type=submit] {
+    cursor: pointer;
+    border: none;
+}
+
+header {
+    background-color: #000;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+header a {
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+header a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.main-page .heading {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.main-page .heading h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.main-page .heading p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.main-page .heading p span {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.main-page .imge {
+    position: relative;
+}
+
+.main-page .imge img {
+    width: 100%;
+}
+
+.main-page .imge .text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    padding-left: 20px;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.main-page .imge .text button {
+    padding: 15px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    opacity: 0.6;
+}
+
+.main-page .imge .text button:hover {
+    opacity: 1;
+}
+
+.main-page .forms {
+    position: absolute;
+    top: 50%;
+    width: 75%;
+    margin-left: 12.5%;
+    transform: translateY(-50%);
+    padding: 30px;
+    background-color: #fff;
+    display: none;
+}
+
+.main-page .forms div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-page .forms h3 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.main-page .forms p {
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+.main-page .forms div button {
+    padding: 5px 15px;
+    font-weight: 900;
+    font-size: 25px;
+    background-color: #fff;
+}
+
+.main-page .forms div button:hover {
+    background-color: #ccc;
+}
+
+.main-page .forms input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline-color: #00f;
+    font-size: 17px;
+}
+
+.main-page .forms input[type="submit"] {
+    margin-top: 20px;
+    background-color: #f30;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    header a {
+        color: #fff;
+        padding: 10px;
+        display: inline-block;
+    }
+
+    .main-page .heading h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .main-page .heading p {
+        font-size: 12px;
+    }
+
+    .main-page .imge .text {
+        font-size: 20px;
+        letter-spacing: 0px;
+    }
+
+    .main-page .imge .text button {
+        padding: 8px 16px;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+}
+
+.all-title {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.all-title article {
+    width: 70%;
+}
+
+@media(max-width:767px) {
+    .all-title {
+        flex-direction: column;
+    }
+
+    .all-title article {
+        width: 100%;
+    }
+}
+
+.all-title article .girl_hat {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.all-title article .girl_hat .head {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.all-title article .girl_hat .head h2 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.all-title article .girl_hat .head p {
+    font-weight: bold;
+}
+
+.all-title article .girl_hat .head p span {
+    color: #888888;
+}
+
+.all-title article .girl_hat .imge img {
+    width: 100%;
+}
+
+.all-title article .girl_hat .pargraph {
+    margin: 30px 0;
+}
+
+.all-title article .girl_hat .click-button {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.all-title article .girl_hat .click-button button {
+    padding: 8px 16px;
+    font-size: 18px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.all-title article .girl_hat .click-button button:hover {
+    background-color: #ccc;
+}
+
+.all-title article .girl_hat .click-button button:last-child {
+    background-color: #000;
+    color: #fff;
+}
+
+.all-title article .girl_hat .click-button button:last-child span {
+    background-color: #fff;
+    color: #000;
+    padding: 2px 5px;
+}
+
+.all-title article .girl_hat .click-button button:last-child:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.all-title article .girl_hat .overflow .comment {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.all-title article .girl_hat .overflow .comment img {
+    width: 80px;
+}
+
+.all-title article .girl_hat .overflow .comment div {
+    margin-left: 20px;
+}
+
+@media(max-width:767px) {
+    .all-title article .girl_hat .overflow .comment {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .all-title article .girl_hat .overflow .comment div {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
+
+.all-title article .girl_hat .overflow .comment div h3 {
+    margin-bottom: 15px;
+}
+
+.all-title article .girl_hat .overflow .comment div h3 span {
+    font-weight: 400;
+    font-size: 16px;
+    color: #888888;
+}
+
+.all-title article .girl_hat .overflow .comment div p {
+    font-size: 15px;
+}
+
+.all-title aside {
+    width: 28%;
+}
+
+.all-title aside h3 {
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+@media(max-width:767px) {
+    .all-title aside {
+        width: 100%;
+    }
+}
+
+.all-title aside .avatar_girl2 {
+    background-color: #000;
+    color: #fff;
+}
+
+.all-title aside .avatar_girl2 img {
+    width: 100%;
+}
+
+.all-title aside .avatar_girl2 .text {
+    padding: 10px;
+}
+
+.all-title aside .avatar_girl2 .text h3 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.all-title aside .avatar_girl2 .text p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.all-title aside .Popular {
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.all-title aside .Popular .img-text {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.all-title aside .Popular .img-text:hover {
+    background-color: #ccc;
+}
+
+.all-title aside .Popular img {
+    width: 50px;
+}
+
+.all-title aside .Popular .text {
+    margin-left: 20px;
+}
+
+.all-title aside .advertise {
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.all-title aside .advertise div {
+    padding: 20px;
+}
+
+.all-title aside .advertise div p {
+    background-color: #eee;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-title aside .tags {
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.all-title aside .tags div {
+    padding: 20px;
+}
+
+.all-title aside .tags div span {
+    display: inline-block;
+    background-color: #eee;
+    margin: 5px 1px;
+    font-size: 12px;
+    padding: 0px 5px;
+}
+
+.all-title aside .incididunt {
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.all-title aside .incididunt div {
+    padding: 20px;
+}
+
+.all-title aside .incididunt div img {
+    width: 46%;
+    margin: 1%;
+}
+
+.all-title aside .follow {
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.all-title aside .follow div {
+    padding: 20px;
+}
+
+.all-title aside .follow div i {
+    font-size: 25px;
+    margin: 5px 10px;
+    display: inline-block;
+}
+
+.all-title aside .subscribe {
+    background-color: #fff;
+}
+
+.all-title aside .subscribe p {
+    padding: 20px;
+    font-size: 15px;
+}
+
+.all-title aside .subscribe form {
+    padding: 20px;
+}
+
+.all-title aside .subscribe form input {
+    width: 100%;
+    padding: 10px;
+}
+
+.all-title aside .subscribe form input[type=submit] {
+    margin-top: 10px;
+    background-color: #f30;
+    color: white;
+}
+
+.all-title aside .subscribe .forms {
+    position: absolute;
+    top: 50%;
+    width: 75%;
+    margin-left: 12.5%;
+    transform: translateY(-50%);
+    padding: 30px;
+    background-color: #fff;
+    display: none;
+}
+
+.all-title aside .subscribe div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.all-title aside .subscribe p {
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+footer {
+    background-color: #747474;
+    margin-top: -20px;
+    padding: 50px;
+}
+
+footer button {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 17px;
+}
+
+footer button:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+footer p {
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #00f;
+}
+
+/* use the click on article */
+.adding {
+    display: none;
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Welcome to Jane's Fashion Blog. Explore the latest trends in fashion, get inspired, and subscribe for updates.">
+    <meta name="author" content="Muhammad Agami">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Blog Template</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-instagram"></i></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-snapchat"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+            <div><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
+        </nav>
+    </header>
+<!-- ******************************************************************** -->
+    <section class="main-page">
+        <div class="heading">
+            <h1>JANE BLOGLIFE</h1>
+            <p>Welcome to the blog of <span>Jane's world</span></p>
+        </div>
+        <div class="imge">
+            <img src="image/jane.jpg" alt="">
+            <div class="text">
+                <strong>Jane's</strong>
+                <h2>FASHION BLOG</h2>
+                <button
+                    onclick="document.querySelector('.main-page .imge .forms').style.display='block'">subscribe</button>
+            </div>
+            <div class="forms">
+                <div>
+                    <h3>SUBSCRIBE</h3>
+                    <button onclick="document.querySelector('.main-page .forms').style.display='none';"><i
+                            class="fa-solid fa-xmark"></i></button>
+                </div>
+                <form action="">
+                    <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+                    <input type="email" name="e-mail" placeholder="Enter e-mail" required>
+                    <input type="submit" value="subscribe">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ********************************************************************** -->
+    <section class="all-title">
+        <article>
+            <div class="girl_hat">
+                <div class="head">
+                    <h2>TITLE HEADING</h2>
+                    <p>Title description, <span>May 2, 2016</span></p>
+                </div>
+                <div class="imge">
+                    <img src="image/girl_hat.jpg" alt="girl_hat">
+                </div>
+                <div class="pargraph">
+                    <p><b>More Hats! </b>I am crazy about hats these days. Some text about this blog entry. Fashion
+                        fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc
+                        id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus
+                        sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae
+                        justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                    <br>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco.</p>
+                </div>
+                <div class="click-button">
+                    <button onclick='this.innerHTML=`<i class="fa-solid fa-check"></i> Liked`'><i
+                            class="fa-solid fa-thumbs-up"></i> Like</button>
+                    <button id="button-one">replies <span>1</span></button>
+                </div>
+                <div class="overflow">
+                    <hr>
+                    <div class="comment">
+                        <img src="image/avatar_smoke.jpg" alt="avatar_smoke">
+                        <div>
+                            <h3>George <span>May 3, 2015, 6:32 PM</span> </h3>
+                            <p>Great blog post! Following</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="girl_hat">
+                <div class="head">
+                    <h2>TITLE HEADING</h2>
+                    <p>Title description, <span>April 23, 2016</span></p>
+                </div>
+                <div class="imge">
+                    <img src="image/man_hat.jpg" alt="man_hat">
+                </div>
+                <div class="pargraph">
+                    <p><b>Hats! </b>The trend this summer is hats for men!</p>
+                    <br>
+                    <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae,
+                        convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim,
+                        ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent
+                        tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue
+                        gravida diam non fringilla.</p>
+                </div>
+                <div class="click-button">
+                    <button onclick='this.innerHTML=`<i class="fa-solid fa-check"></i> Liked`'><i
+                            class="fa-solid fa-thumbs-up"></i> Like</button>
+                    <button id="button-two">replies <span>1</span></button>
+                </div>
+                <div class="overflow">
+                    <hr>
+                    <div class="comment">
+                        <img src="image/girl_train.jpg" alt="girl_train">
+                        <div>
+                            <h3>Amber <span>April 26, 2015, 10:52 PM</span> </h3>
+                            <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="image/girl.jpg" alt="girl">
+                        <div>
+                            <h3>Angie <span>April 23, 2015, 9:12 PM</span> </h3>
+                            <p>Love hats!!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="girl_hat">
+                <div class="head">
+                    <h2>TITLE HEADING</h2>
+                    <p>Title description, <span>April 7, 2016</span></p>
+                </div>
+                <div class="imge">
+                    <img src="image/runway.jpg" alt="runway">
+                </div>
+                <div class="pargraph">
+                    <p><b>Dont miss! </b>The runway in New York City this weekend is gonna be legendary!</p>
+                    <br>
+                    <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae,
+                        convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim,
+                        ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent
+                        tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue
+                        gravida diam non fringilla.</p>
+                </div>
+                <div class="click-button">
+                    <button onclick='this.innerHTML=`<i class="fa-solid fa-check"></i> Liked`'><i
+                            class="fa-solid fa-thumbs-up"></i> Like</button>
+                    <button id="button-three">replies <span>1</span></button>
+                </div>
+                <div class="overflow">
+                    <hr>
+                    <div class="comment">
+                        <img src="image/girl_mountain.jpg" alt="girl_mountain">
+                        <div>
+                            <h3>Jane <span>April 10, 2015, 7:22 PM</span> </h3>
+                            <p>That was a great runway show! Thanks for everything.</p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="image/boy.jpg" alt="boy">
+                        <div>
+                            <h3>John <span>April 8, 2015, 10:32 PM</span> </h3>
+                            <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="image/girl_hood.jpg" alt="girl_hood">
+                        <div>
+                            <h3>Anja <span>April 7, 2015, 9:12 PM</span> </h3>
+                            <p>Cant wait for the runway to start!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <aside>
+            <div class="avatar_girl2">
+                <img src="image/avatar_girl2.jpg" alt="avatar_girl2">
+                <div class="text">
+                    <h3>My Name</h3>
+                    <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a
+                        interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+                </div>
+            </div>
+            <div class="Popular">
+                <h3>Popular Posts</h3>
+                <div class="img-text">
+                    <img src="image/avatar_smoke.jpg" alt="">
+                    <div class="text">
+                        <h4>Image Denim</h4>
+                        <p>Sed mattis nunc</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="img-text">
+                    <img src="image/bandmember.jpg" alt="">
+                    <div class="text">
+                        <h4>Image Sweaters</h4>
+                        <p>Praes tinci sed</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="img-text">
+                    <img src="image/workshop.jpg" alt="">
+                    <div class="text">
+                        <h4>Image Workshop</h4>
+                        <p>Ultricies congue</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="img-text">
+                    <img src="image/avatar_smoke.jpg" alt="">
+                    <div class="text">
+                        <h4>Image Trends</h4>
+                        <p>Lorem ipsum dipsum</p>
+                    </div>
+                </div>
+            </div>
+            <div class="advertise">
+                <h3>Advertise</h3>
+                <div>
+                    <p>Your AD Here</p>
+                </div>
+            </div>
+            <div class="tags">
+                <h3>Tags</h3>
+                <div>
+                    <span>Fashion</span>
+                    <span>New York</span>
+                    <span>London</span>
+                    <span>Hats</span>
+                    <span>Norway</span>
+                    <span>Sweaters</span>
+                    <span>Ideas</span>
+                    <span>Deals</span>
+                    <span>Accessories</span>
+                    <span>News</span>
+                    <span>Clothing</span>
+                    <span>Shopping</span>
+                    <span>Jeans</span>
+                    <span>Trends</span>
+                </div>
+            </div>
+            <div class="incididunt">
+                <h3>Inspiration</h3>
+                <div>
+                    <img src="image/jeans.jpg" alt="jeans">
+                    <img src="image/avatar_hat.jpg" alt="avatar_hat">
+                    <img src="image/team1.jpg" alt="team1">
+                    <img src="image/team4.jpg" alt="team4">
+                </div>
+            </div>
+            <div class="follow">
+                <h3>Follow Me</h3>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i></i>
+                    <i class="fa-brands fa-square-snapchat"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+            <div class="subscribe">
+                <h3>Subscribe</h3>
+                <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+                <form action="">
+                    <input type="email" placeholder="Enter e-mail" required>
+                    <input type="submit" value="subscribe">
+                </form>
+            </div>
+        </aside>
+    </section>
+    <footer>
+        <button onclick="window.scroll(0,0)"><i class="fa-solid fa-arrow-up"></i> To The top</button>
+        <p>powerd by <a href="#">Mohamed Agami</a></p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
